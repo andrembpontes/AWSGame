@@ -45,8 +45,8 @@ Controlled.prototype.stop = function(){
 
 Controlled.prototype.getX = function(){ this.calcPosition(); return this.x }
 Controlled.prototype.getY = function(){ this.calcPosition(); return this.y }
-Controlled.prototype.setX = function(x) {this.calcPosition(); this.x = x}
-Controlled.prototype.setY = function(y) {this.calcPosition(); this.y = y}
+Controlled.prototype.setX = function(x) { this.calcPosition(); this.x = x }
+Controlled.prototype.setY = function(y) { this.calcPosition(); this.y = y }
 
 Controlled.prototype.calcPosition = function() {
 	var mod = (getNow() - this.lastCalc ) * this.speed

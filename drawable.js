@@ -17,5 +17,6 @@ DrawableRect.prototype.draw = function(ctx, x, y){
 	ctx.fill();
 }
 DrawableRect.prototype.clear = function(ctx, x, y){
-	ctx.clearRect(x, -y, this.width, this.height)
+	//TODO improve
+	ctx.clearRect(x - 1, -y - 1, this.width + 2, this.height + 2)
 }
